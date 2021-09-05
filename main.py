@@ -46,7 +46,7 @@ class UI_poke20(QMainWindow):
 
     def clicked_dontknowBUTT(self):
         # TODO add counter and push 'unknown' if reached 10 unknown
-        self.unknown_ct += 1  # this is  gonna introduce a hard to create bug, but fuck it
+        self.unknown_ct += 1  # this is  gonna introduce a hard to create bug
         self.answer_question(DONTKNOW)
         if int(self.unknown_ct) == 10:
             result = any('q_is_name' == type(self.cur_question).__name__ for question in self.questions)
